@@ -2,7 +2,7 @@
 ## Analyse Comparative des Principales Économies
 ### BANGOURA SOULEYMANE
 ---
-<img src="SB.png" style="height:464px;margin-right:432px"/>	
+<img src="s.jpeg" style="height:464px;margin-right:432px"/>	
 
 <img src="SETTAT.png" style="height:464px;margin-right:432px"/>	
 
