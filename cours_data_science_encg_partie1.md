@@ -1,9 +1,9 @@
 # COURS DE SCIENCE DES DONNÉES
 ## École Nationale de Commerce et de Gestion (ENCG) - 4ème Année
 
-<img src="graphique1.png" style="height:464px;margin-right:432px"/>
+<img src="s.jpeg" style="height:464px;margin-right:432px"/>
 
-<img src="graphique1.png" style="height:464px;margin-right:432px"/>
+<img src="graphique4.png" style="height:464px;margin-right:432px"/>
 
 ---
 
