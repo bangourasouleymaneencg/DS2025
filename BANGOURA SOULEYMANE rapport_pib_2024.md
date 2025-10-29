@@ -4,6 +4,8 @@
 ---
 <img src="SB.png" style="height:464px;margin-right:432px"/>	
 
+<img src="SETTAT.png" style="height:464px;margin-right:432px"/>	
+
 ## 📊 Résumé Exécutif
 
 Ce rapport présente une analyse approfondie du PIB des 15 premières économies mondiales pour l'année 2024, avec une comparaison par rapport à 2023. L'analyse révèle des dynamiques contrastées entre économies développées et émergentes, avec des implications majeures pour l'économie mondiale.
