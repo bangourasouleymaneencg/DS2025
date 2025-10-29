@@ -1,7 +1,8 @@
 # Rapport d'Analyse du PIB Mondial 2024
 ## Analyse Comparative des Principales Économies
-
+### BANGOURA SOULEYMANE
 ---
+<img src="SB.png" style="height:464px;margin-right:432px"/>	
 
 ## 📊 Résumé Exécutif
 
