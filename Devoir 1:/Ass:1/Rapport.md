@@ -65,4 +65,9 @@ sns.set_palette("husl")
 print("=" * 80)
 print("ANALYSE DE CORRÉLATION - CONSOMMATION ÉLECTRIQUE RÉSIDENTIELLE")
 print("=" * 80)
-  
+
+
+================================================================================
+ANALYSE DE CORRÉLATION - CONSOMMATION ÉLECTRIQUE RÉSIDENTIELLE
+================================================================================
+
