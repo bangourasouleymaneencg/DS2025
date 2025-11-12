@@ -30,5 +30,39 @@ Il s'agit d'un **foyer résidentiel unique** situé dans une zone périurbaine p
 
 ```python
 !pip install ucimlrepo
+from ucimlrepo import fetch_ucirepo
+
+```python
 from ucimlrepo import fetch_ucirepo 
+  
+# fetch dataset 
+individual_household_electric_power_consumption = fetch_ucirepo(id=235) 
+  
+# data (as pandas dataframes) 
+X = individual_household_electric_power_consumption.data.features 
+y = individual_household_electric_power_consumption.data.targets 
+  
+# metadata 
+print(individual_household_electric_power_consumption.metadata) 
+  
+# variable information 
+print(individual_household_electric_power_consumption.variables)
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy import stats
+from datetime import datetime
+import warnings
+warnings.filterwarnings('ignore')
+
+# Configuration pour les graphiques
+plt.style.use('seaborn-v0_8-darkgrid')
+sns.set_palette("husl")
+
+print("=" * 80)
+print("ANALYSE DE CORRÉLATION - CONSOMMATION ÉLECTRIQUE RÉSIDENTIELLE")
+print("=" * 80)
   
