@@ -8,7 +8,6 @@
 
 <img src="SETTAT.png" style="height:464px;margin-right:432px"/>	
 
-Je vais rechercher des informations détaillées sur ce dataset pour vous fournir une introduction complète.Excellent ! Voici une introduction détaillée sur ce jeu de données basée sur les informations trouvées :
 
 ## Introduction au Dataset "Individual Household Electric Power Consumption"
 
