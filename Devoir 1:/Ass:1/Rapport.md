@@ -1116,6 +1116,34 @@ print(f"Corrélation partielle (contrôlant Voltage): r = {r_partial:.4f}")
 print(f"Différence: Δr = {abs(r_gap_sm3 - r_partial):.4f}")
 ```
 
+[TEST DE NORMALITÉ - SHAPIRO-WILK]
+------------------------------------------------------------
+Global_active_power            | stat=0.7967 | p=6.7975e-62 | ✗ Non normal
+Global_reactive_power          | stat=0.8935 | p=2.7956e-50 | ✗ Non normal
+Voltage                        | stat=0.9893 | p=4.7111e-19 | ✗ Non normal
+Global_intensity               | stat=0.7952 | p=4.9288e-62 | ✗ Non normal
+Sub_metering_1                 | stat=0.1727 | p=2.0539e-91 | ✗ Non normal
+Sub_metering_2                 | stat=0.2112 | p=2.5632e-90 | ✗ Non normal
+Sub_metering_3                 | stat=0.6865 | p=2.2142e-70 | ✗ Non normal
+
+[CORRÉLATION DE SPEARMAN - Alternative robuste]
+------------------------------------------------------------
+
+Matrice de Spearman (5 premières corrélations):
+  Global_active_power       ↔ Global_intensity          | ρ = 0.9954
+  Global_active_power       ↔ Sub_metering_3            | ρ = 0.6036
+  Global_intensity          ↔ Sub_metering_3            | ρ = 0.6002
+  Global_reactive_power     ↔ Sub_metering_2            | ρ = 0.4328
+  Voltage                   ↔ Global_intensity          | ρ = -0.3494
+
+[CORRÉLATION PARTIELLE]
+------------------------------------------------------------
+Exemple: Corrélation GAP ↔ SM3 en contrôlant le Voltage
+
+Corrélation simple GAP ↔ SM3: r = 0.6386
+Corrélation partielle (contrôlant Voltage): r = 0.6017
+Différence: Δr = 0.0368
+
 #### A.3 Code pour analyse saisonnière
 
 ```python
@@ -1167,6 +1195,12 @@ plt.show()
 
 print("\n✓ Graphique saisonnier sauvegardé: seasonal_correlation.png")
 ```
+[ANALYSE SAISONNIÈRE]
+------------------------------------------------------------
+Hiver           | GAP ↔ SM3: r = 0.5934 | n = 493,912
+Printemps       | GAP ↔ SM3: r = 0.6390 | n = 524,156
+Été             | GAP ↔ SM3: r = 0.6963 | n = 518,290
+Automne         | GAP ↔ SM3: r = 0.6338 | n = 512,922
 
 #### A.4 Code pour intervalles de confiance (Bootstrap)
 
@@ -1234,6 +1268,12 @@ plt.show()
 print("\n✓ Distribution bootstrap sauvegardée: bootstrap_distribution.png")
 ```
 
+[INTERVALLES DE CONFIANCE - BOOTSTRAP]
+------------------------------------------------------------
+Corrélation GAP ↔ GI:
+  Moyenne bootstrap: r = 0.9989
+  IC 95%: [0.9988, 0.9990]
+  Largeur IC: 0.0002
 ### Annexe B : Visualisations supplémentaires
 
 - `correlation_heatmap.png` : Matrice de corrélation complète
