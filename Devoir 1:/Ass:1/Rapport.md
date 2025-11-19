@@ -701,6 +701,21 @@ df = df.dropna()
 print(f"✓ Lignes supprimées: {initial_rows - len(df):,}")
 print(f"✓ Lignes restantes: {len(df):,}")
 
+
+[2] NETTOYAGE DES DONNÉES...
+
+🔍 Valeurs manquantes par colonne:
+                       Manquantes  Pourcentage
+Global_active_power         25979     1.251844
+Global_reactive_power       25979     1.251844
+Voltage                     25979     1.251844
+Global_intensity            25979     1.251844
+Sub_metering_1              25979     1.251844
+Sub_metering_2              25979     1.251844
+Sub_metering_3              25979     1.251844
+✓ Lignes supprimées: 25,979 (1.25%)
+✓ Lignes restantes: 2,049,280
+
 # ============================================================================
 # 3. STATISTIQUES DESCRIPTIVES
 # ============================================================================
@@ -710,6 +725,41 @@ print("\n[3] STATISTIQUES DESCRIPTIVES...")
 stats_desc = df[numeric_cols].describe()
 print("\n📈 Statistiques descriptives:")
 print(stats_desc.round(3))
+
+[ ]
+# 3. STATISTIQUES DESCRIPTIVES
+# ============================================================================
+
+print("\n[3] STATISTIQUES DESCRIPTIVES...")
+
+stats_desc = df[numeric_cols].describe()
+print("\n📈 Statistiques descriptives:")
+print(stats_desc.round(3))
+
+
+[3] STATISTIQUES DESCRIPTIVES...
+
+📈 Statistiques descriptives:
+       Global_active_power  Global_reactive_power     Voltage  \
+count          2049280.000            2049280.000  2049280.00   
+mean                 1.092                  0.124      240.84   
+std                  1.057                  0.113        3.24   
+min                  0.076                  0.000      223.20   
+25%                  0.308                  0.048      238.99   
+50%                  0.602                  0.100      241.01   
+75%                  1.528                  0.194      242.89   
+max                 11.122                  1.390      254.15   
+
+       Global_intensity  Sub_metering_1  Sub_metering_2  Sub_metering_3  
+count       2049280.000     2049280.000     2049280.000     2049280.000  
+mean              4.628           1.122           1.299           6.458  
+std               4.444           6.153           5.822           8.437  
+min               0.200           0.000           0.000           0.000  
+25%               1.400           0.000           0.000           0.000  
+50%               2.600           0.000           0.000           1.000  
+75%               6.400           0.000           1.000          17.000  
+max              48.400          88.000          80.000          31.000
+
 
 # ============================================================================
 # 4. MATRICE DE CORRÉLATION COMPLÈTE
@@ -743,6 +793,38 @@ plt.tight_layout()
 plt.savefig('correlation_heatmap.png', dpi=300, bbox_inches='tight')
 print("✓ Heatmap sauvegardée: correlation_heatmap.png")
 plt.show()
+
+
+[4] CALCUL DE LA MATRICE DE CORRÉLATION...
+
+🔢 Matrice de corrélation (Pearson):
+                       Global_active_power  Global_reactive_power  Voltage  \
+Global_active_power                  1.000                  0.247   -0.400   
+Global_reactive_power                0.247                  1.000   -0.112   
+Voltage                             -0.400                 -0.112    1.000   
+Global_intensity                     0.999                  0.266   -0.411   
+Sub_metering_1                       0.484                  0.123   -0.196   
+Sub_metering_2                       0.435                  0.139   -0.167   
+Sub_metering_3                       0.639                  0.090   -0.268   
+
+                       Global_intensity  Sub_metering_1  Sub_metering_2  \
+Global_active_power               0.999           0.484           0.435   
+Global_reactive_power             0.266           0.123           0.139   
+Voltage                          -0.411          -0.196          -0.167   
+Global_intensity                  1.000           0.489           0.440   
+Sub_metering_1                    0.489           1.000           0.055   
+Sub_metering_2                    0.440           0.055           1.000   
+Sub_metering_3                    0.627           0.103           0.081   
+
+                       Sub_metering_3  
+Global_active_power             0.639  
+Global_reactive_power           0.090  
+Voltage                        -0.268  
+Global_intensity                0.627  
+Sub_metering_1                  0.103  
+Sub_metering_2                  0.081  
+Sub_metering_3                  1.000  
+✓ Heatmap sauvegardée: correlation_heatmap.png
 
 # ============================================================================
 # 5. ANALYSE DES CORRÉLATIONS SIGNIFICATIVES
@@ -793,6 +875,25 @@ for i in range(len(correlation_matrix.columns)):
             print(f"  → p-value: {p_val:.2e}")
             print()
 
+
+[5] ANALYSE DES CORRÉLATIONS SIGNIFICATIVES...
+
+📊 Corrélations significatives (|r| > 0.5 et p < 0.05):
+--------------------------------------------------------------------------------
+Global_active_power       ↔ Global_intensity         
+  → Corrélation positive: r =  0.9989 (FORTE)
+  → p-value: 0.00e+00 ✓ Significative
+
+Global_active_power       ↔ Sub_metering_3           
+  → Corrélation positive: r =  0.6386 (MODÉRÉE)
+  → p-value: 0.00e+00 ✓ Significative
+
+Global_intensity          ↔ Sub_metering_3           
+  → Corrélation positive: r =  0.6265 (MODÉRÉE)
+  → p-value: 0.00e+00 ✓ Significative
+
+
+
 # ============================================================================
 # 6. SCATTER PLOTS POUR LES CORRÉLATIONS FORTES
 # ============================================================================
@@ -842,6 +943,9 @@ plt.savefig('scatter_plots.png', dpi=300, bbox_inches='tight')
 print("✓ Scatter plots sauvegardés: scatter_plots.png")
 plt.show()
 
+[6] GÉNÉRATION DES SCATTER PLOTS...
+✓ Scatter plots sauvegardés: scatter_plots.png
+
 # ============================================================================
 # 7. CORRÉLATIONS TEMPORELLES
 # ============================================================================
@@ -880,6 +984,11 @@ plt.savefig('temporal_correlation.png', dpi=300, bbox_inches='tight')
 print("✓ Graphique temporel sauvegardé: temporal_correlation.png")
 plt.show()
 
+[7] ANALYSE DES CORRÉLATIONS TEMPORELLES...
+
+⏰ Corrélation Global_active_power vs Sub_metering_3 par heure:
+✓ Graphique temporel sauvegardé: temporal_correlation.png
+
 # ============================================================================
 # 8. RAPPORT FINAL
 # ============================================================================
@@ -910,6 +1019,30 @@ for i in range(len(correlation_matrix.columns)):
 print("\n✅ Analyse terminée avec succès!")
 print("=" * 80)
 ```
+
+================================================================================
+RÉSUMÉ DE L'ANALYSE DE CORRÉLATION
+================================================================================
+
+🎯 CORRÉLATIONS PRINCIPALES IDENTIFIÉES:
+
+1. CORRÉLATIONS TRÈS FORTES (|r| > 0.7):
+   • Global_active_power ↔ Global_intensity: r = 0.9989
+
+2. CORRÉLATIONS MODÉRÉES (0.5 < |r| < 0.7):
+   • Global_active_power ↔ Sub_metering_3: r = 0.6386
+   • Global_intensity ↔ Sub_metering_3: r = 0.6265
+
+3. CORRÉLATIONS NÉGATIVES NOTABLES:
+   • Global_active_power ↔ Voltage: r = -0.3998
+   • Voltage ↔ Global_intensity: r = -0.4114
+
+📁 Fichiers générés:
+   • correlation_heatmap.png - Matrice de corrélation
+   • scatter_plots.png - Graphiques de dispersion
+   • temporal_correlation.png - Évolution temporelle
+
+✅ Analyse terminée avec succès!
 
 #### A.2 Code pour tests statistiques complémentaires
 
