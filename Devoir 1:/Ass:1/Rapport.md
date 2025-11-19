@@ -824,7 +824,7 @@ Sub_metering_2                  0.081
 Sub_metering_3                  1.000  
 ✓ Heatmap sauvegardée: correlation_heatmap.png
 
-**### <img src="4.png" style="height:464px;margin-right:432px"/>**
+#### <img src="4.png" style="height:464px;margin-right:432px"/>
 
 # ============================================================================
 # 5. ANALYSE DES CORRÉLATIONS SIGNIFICATIVES
@@ -946,7 +946,7 @@ plt.show()
 [6] GÉNÉRATION DES SCATTER PLOTS...
 ✓ Scatter plots sauvegardés: scatter_plots.png
 
-### <img src="6.png" style="height:464px;margin-right:432px"/>
+#### <img src="6.png" style="height:464px;margin-right:432px"/>
 
 # ============================================================================
 # 7. CORRÉLATIONS TEMPORELLES
@@ -992,7 +992,7 @@ plt.show()
 ✓ Graphique temporel sauvegardé: temporal_correlation.png
 
 
-### <img src="7.png" style="height:464px;margin-right:432px"/>
+#### <img src="7.png" style="height:464px;margin-right:432px"/>
 
 # ============================================================================
 # 8. RAPPORT FINAL
@@ -1202,6 +1202,7 @@ Printemps       | GAP ↔ SM3: r = 0.6390 | n = 524,156
 Été             | GAP ↔ SM3: r = 0.6963 | n = 518,290
 Automne         | GAP ↔ SM3: r = 0.6338 | n = 512,922
 
+### <img src="A3.png" style="height:464px;margin-right:432px"/>
 #### A.4 Code pour intervalles de confiance (Bootstrap)
 
 ```python
@@ -1274,6 +1275,8 @@ Corrélation GAP ↔ GI:
   Moyenne bootstrap: r = 0.9989
   IC 95%: [0.9988, 0.9990]
   Largeur IC: 0.0002
+  
+### <img src="A4.png" style="height:464px;margin-right:432px"/>
 ### Annexe B : Visualisations supplémentaires
 
 - `correlation_heatmap.png` : Matrice de corrélation complète
