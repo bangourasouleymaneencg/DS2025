@@ -826,7 +826,7 @@ Sub_metering_2                  0.081
 Sub_metering_3                  1.000  
 ✓ Heatmap sauvegardée: correlation_heatmap.png
 
-### <img src="4.png" style="height:464px;margin-right:432px"/>
+**### <img src="4.png" style="height:464px;margin-right:432px"/>**
 
 # ============================================================================
 # 5. ANALYSE DES CORRÉLATIONS SIGNIFICATIVES
