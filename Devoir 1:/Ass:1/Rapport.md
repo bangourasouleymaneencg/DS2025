@@ -826,6 +826,8 @@ Sub_metering_2                  0.081
 Sub_metering_3                  1.000  
 ✓ Heatmap sauvegardée: correlation_heatmap.png
 
+### <img src="4.png" style="height:464px;margin-right:432px"/>
+
 # ============================================================================
 # 5. ANALYSE DES CORRÉLATIONS SIGNIFICATIVES
 # ============================================================================
@@ -946,6 +948,8 @@ plt.show()
 [6] GÉNÉRATION DES SCATTER PLOTS...
 ✓ Scatter plots sauvegardés: scatter_plots.png
 
+### <img src="6.png" style="height:464px;margin-right:432px"/>
+
 # ============================================================================
 # 7. CORRÉLATIONS TEMPORELLES
 # ============================================================================
@@ -988,6 +992,9 @@ plt.show()
 
 ⏰ Corrélation Global_active_power vs Sub_metering_3 par heure:
 ✓ Graphique temporel sauvegardé: temporal_correlation.png
+
+
+### <img src="7.png" style="height:464px;margin-right:432px"/>
 
 # ============================================================================
 # 8. RAPPORT FINAL
