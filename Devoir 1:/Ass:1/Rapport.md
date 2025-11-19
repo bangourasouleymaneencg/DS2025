@@ -630,6 +630,47 @@ print(df.head())
 print("\n📋 Structure du dataset:")
 print(df.info())
 
+================================================================================
+ANALYSE DE CORRÉLATION - CONSOMMATION ÉLECTRIQUE RÉSIDENTIELLE
+================================================================================
+
+[1] CHARGEMENT DES DONNÉES...
+✓ Dimensions du dataset: 2,075,259 lignes × 8 colonnes
+✓ Période: 2006-12-16 17:24:00 à 2010-11-26 21:02:00
+
+📊 Aperçu des données:
+             datetime  Global_active_power  Global_reactive_power  Voltage  \
+0 2006-12-16 17:24:00                4.216                  0.418   234.84   
+1 2006-12-16 17:25:00                5.360                  0.436   233.63   
+2 2006-12-16 17:26:00                5.374                  0.498   233.29   
+3 2006-12-16 17:27:00                5.388                  0.502   233.74   
+4 2006-12-16 17:28:00                3.666                  0.528   235.68   
+
+   Global_intensity  Sub_metering_1  Sub_metering_2  Sub_metering_3  
+0              18.4             0.0             1.0            17.0  
+1              23.0             0.0             1.0            16.0  
+2              23.0             0.0             2.0            17.0  
+3              23.0             0.0             1.0            17.0  
+4              15.8             0.0             1.0            17.0  
+
+📋 Structure du dataset:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2075259 entries, 0 to 2075258
+Data columns (total 8 columns):
+ #   Column                 Dtype         
+---  ------                 -----         
+ 0   datetime               datetime64[ns]
+ 1   Global_active_power    float64       
+ 2   Global_reactive_power  float64       
+ 3   Voltage                float64       
+ 4   Global_intensity       float64       
+ 5   Sub_metering_1         float64       
+ 6   Sub_metering_2         float64       
+ 7   Sub_metering_3         float64       
+dtypes: datetime64[ns](1), float64(7)
+memory usage: 126.7 MB
+None
+
 # ============================================================================
 # 2. NETTOYAGE DES DONNÉES
 # ============================================================================
