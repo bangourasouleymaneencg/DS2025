@@ -1,12 +1,10 @@
+### <img src="BANG.png" style="height:464px;margin-right:432px"/>	<img src="ENCG.png" style="height:464px;margin-right:432px"/>	
 # Rapport d'Analyse sur la consommation électrique
 ## Consommation d'électricité des ménages individuels
 ### BANGOURA SOULEYMANE
 ### N° A : 22007304
 ### GROUPE 1 CAC
 ---
-### <img src="BANG.png" style="height:464px;margin-right:432px"/>	
-
-<img src="ENCG.png" style="height:464px;margin-right:432px"/>	
 
 
 ## Introduction au Dataset "Individual Household Electric Power Consumption"
