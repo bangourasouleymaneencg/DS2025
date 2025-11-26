@@ -52,6 +52,51 @@ print("\n========= A few first samples ========= \n")
 print(df.head())
 ```
 
+========= Dataset summary ========= 
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 4898 entries, 0 to 4897
+Data columns (total 12 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   fixed acidity         4898 non-null   float64
+ 1   volatile acidity      4898 non-null   float64
+ 2   citric acid           4898 non-null   float64
+ 3   residual sugar        4898 non-null   float64
+ 4   chlorides             4898 non-null   float64
+ 5   free sulfur dioxide   4898 non-null   float64
+ 6   total sulfur dioxide  4898 non-null   float64
+ 7   density               4898 non-null   float64
+ 8   pH                    4898 non-null   float64
+ 9   sulphates             4898 non-null   float64
+ 10  alcohol               4898 non-null   float64
+ 11  quality               4898 non-null   int64  
+dtypes: float64(11), int64(1)
+memory usage: 459.3 KB
+
+========= A few first samples ========= 
+
+   fixed acidity  volatile acidity  citric acid  residual sugar  chlorides  \
+0            7.0              0.27         0.36            20.7      0.045   
+1            6.3              0.30         0.34             1.6      0.049   
+2            8.1              0.28         0.40             6.9      0.050   
+3            7.2              0.23         0.32             8.5      0.058   
+4            7.2              0.23         0.32             8.5      0.058   
+
+   free sulfur dioxide  total sulfur dioxide  density    pH  sulphates  \
+0                 45.0                 170.0   1.0010  3.00       0.45   
+1                 14.0                 132.0   0.9940  3.30       0.49   
+2                 30.0                  97.0   0.9951  3.26       0.44   
+3                 47.0                 186.0   0.9956  3.19       0.40   
+4                 47.0                 186.0   0.9956  3.19       0.40   
+
+   alcohol  quality  
+0      8.8        6  
+1      9.5        6  
+2     10.1        6  
+3      9.9        6  
+4      9.9        6  
+
 ### 2.2 Distribution de la Variable Cible
 
 ```python
@@ -64,35 +109,19 @@ print(Y.value_counts())
 Y = [0 if val <=5 else 1 for val in Y]
 ```
 
-                    name     role         type demographic  \
-0          fixed_acidity  Feature   Continuous        None   
-1       volatile_acidity  Feature   Continuous        None   
-2            citric_acid  Feature   Continuous        None   
-3         residual_sugar  Feature   Continuous        None   
-4              chlorides  Feature   Continuous        None   
-5    free_sulfur_dioxide  Feature   Continuous        None   
-6   total_sulfur_dioxide  Feature   Continuous        None   
-7                density  Feature   Continuous        None   
-8                     pH  Feature   Continuous        None   
-9              sulphates  Feature   Continuous        None   
-10               alcohol  Feature   Continuous        None   
-11               quality   Target      Integer        None   
-12                 color    Other  Categorical        None   
 
-               description units missing_values  
-0                     None  None             no  
-1                     None  None             no  
-2                     None  None             no  
-3                     None  None             no  
-4                     None  None             no  
-5                     None  None             no  
-6                     None  None             no  
-7                     None  None             no  
-8                     None  None             no  
-9                     None  None             no  
-10                    None  None             no  
-11  score between 0 and 10  None             no  
-12            red or white  None             no  
+========= Wine Qualities ========= 
+
+quality
+6    2198
+5    1457
+7     880
+8     175
+4     163
+3      20
+9       5
+Name: count, dtype: int64
+
 **Observation** : La distribution originale de la qualité permet d'observer la répartition des scores avant binarisation.
 
 ### 2.3 Détection des Valeurs Aberrantes
