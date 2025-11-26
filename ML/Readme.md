@@ -64,6 +64,35 @@ print(Y.value_counts())
 Y = [0 if val <=5 else 1 for val in Y]
 ```
 
+                    name     role         type demographic  \
+0          fixed_acidity  Feature   Continuous        None   
+1       volatile_acidity  Feature   Continuous        None   
+2            citric_acid  Feature   Continuous        None   
+3         residual_sugar  Feature   Continuous        None   
+4              chlorides  Feature   Continuous        None   
+5    free_sulfur_dioxide  Feature   Continuous        None   
+6   total_sulfur_dioxide  Feature   Continuous        None   
+7                density  Feature   Continuous        None   
+8                     pH  Feature   Continuous        None   
+9              sulphates  Feature   Continuous        None   
+10               alcohol  Feature   Continuous        None   
+11               quality   Target      Integer        None   
+12                 color    Other  Categorical        None   
+
+               description units missing_values  
+0                     None  None             no  
+1                     None  None             no  
+2                     None  None             no  
+3                     None  None             no  
+4                     None  None             no  
+5                     None  None             no  
+6                     None  None             no  
+7                     None  None             no  
+8                     None  None             no  
+9                     None  None             no  
+10                    None  None             no  
+11  score between 0 and 10  None             no  
+12            red or white  None             no  
 **Observation** : La distribution originale de la qualité permet d'observer la répartition des scores avant binarisation.
 
 ### 2.3 Détection des Valeurs Aberrantes
