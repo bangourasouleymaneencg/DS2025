@@ -181,7 +181,7 @@ sc = sc.fit(Xa)
 Xa_n = sc.transform(Xa)
 Xv_n = sc.transform(Xv)
 ```
-
+<img src="T1.png" style="height:464px;margin-right:432px"/>	
 **Justification** : La normalisation est essentielle pour les algorithmes basés sur les distances (comme KNN) afin d'éviter que les features avec de grandes échelles dominent le calcul de distance.
 
 ### 3.3 Classification K-Nearest Neighbors (KNN)
