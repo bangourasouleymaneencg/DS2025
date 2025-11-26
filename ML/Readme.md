@@ -181,6 +181,7 @@ sc = sc.fit(Xa)
 Xa_n = sc.transform(Xa)
 Xv_n = sc.transform(Xv)
 ```
+<img src="T5.png" style="height:464px;margin-right:432px"/>	
 <img src="T1.png" style="height:464px;margin-right:432px"/>	
 **Justification** : La normalisation est essentielle pour les algorithmes basés sur les distances (comme KNN) afin d'éviter que les features avec de grandes échelles dominent le calcul de distance.
 
@@ -254,6 +255,19 @@ mi_scores = pd.Series(mi_scores, index=X.columns)
 print("Mutual Information Scores:")
 print(mi_scores.sort_values(ascending=False))
 ```
+Mutual Information Scores:
+fixed acidity           0.005382
+volatile acidity        0.027054
+citric acid             0.032562
+residual sugar          0.035553
+chlorides               0.035201
+free sulfur dioxide     0.017991
+total sulfur dioxide    0.033764
+density                 0.089283
+pH                      0.021132
+sulphates               0.002603
+alcohol                 0.087281
+dtype: float64
 
 ### 4.2 Visualisation des Scores d'Information Mutuelle
 
@@ -270,7 +284,10 @@ plt.title('Scores d\'Information Mutuelle avec la Qualité du Vin Binarisée')
 plt.tight_layout()
 plt.show()
 ```
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
 
+  sns.barplot(x=mi_scores_sorted.index, y=mi_scores_sorted.values, palette='viridis')
+<img src="T2.png" style="height:464px;margin-right:432px"/>	
 ### 4.3 Interprétation de l'Information Mutuelle
 
 **Résultats clés** :
@@ -296,6 +313,19 @@ pearson_correlations = correlation_matrix['quality_binarized'].drop('quality_bin
 print("Absolute Pearson Correlation Scores:")
 print(pearson_correlations.sort_values(ascending=False))
 ```
+Absolute Pearson Correlation Scores with Binarized Wine Quality:
+fixed acidity           0.089749
+volatile acidity        0.225440
+citric acid             0.000700
+residual sugar          0.092756
+chlorides               0.183939
+free sulfur dioxide     0.001278
+total sulfur dioxide    0.170924
+density                 0.268696
+pH                      0.083687
+sulphates               0.051858
+alcohol                 0.383280
+Name: quality_binarized, dtype: float64
 
 ### 5.2 Visualisation des Corrélations
 
@@ -312,7 +342,7 @@ plt.title('Corrélations de Pearson Absolues avec la Qualité du Vin Binarisée'
 plt.tight_layout()
 plt.show()
 ```
-
+<img src="T4.png" style="height:464px;margin-right:432px"/>	
 ### 5.3 Interprétation des Corrélations de Pearson
 
 **Résultats clés** :
