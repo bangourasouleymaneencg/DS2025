@@ -1,6 +1,10 @@
 # Rapport d'Analyse : Performance Académique des Étudiants
-
+## BANGOURA SOULEYMANE
+## N°A : 22007304
+## CAC G1
 ---
+<img src="SB.png" style="height:464px;margin-right:432px"/>	
+<img src="SETTAT.png" style="height:464px;margin-right:432px"/>	
 
 ## Table des Matières
 
