@@ -1,5 +1,13 @@
 # Compte Rendu : Analyse du Dataset IPL 2020 Fantasy League
-
+##Introduction
+Contexte et origine du dataset
+Le dataset "IPL 2020 - Fantasy League Analysis" a été créé et publié sur Kaggle par akashram en septembre 2020. Cette base de données a été conçue spécifiquement pour analyser et augmenter les chances de gagner en Fantasy League Kaggle, dans le contexte de l'Indian Premier League (IPL) 2020, l'une des compétitions de cricket les plus populaires au monde.
+Objectif et méthodologie
+Ce dataset vise à fournir aux passionnés de cricket et aux joueurs de fantasy league des données détaillées et exploitables pour optimiser leurs stratégies de sélection d'équipe. Les données compilées couvrent la saison IPL 2020 et incluent des statistiques de performance des joueurs, des informations sur les matchs, et d'autres métriques clés permettant d'évaluer les performances individuelles et collectives.
+Nature de la population
+La base de données se concentre sur les joueurs de cricket participant à l'IPL 2020, incluant batteurs, lanceurs et gardiens de guichet de toutes les équipes franchisées. Elle compile leurs performances match par match, offrant ainsi une vue granulaire des statistiques individuelles exploitables pour les analyses prédictives.
+Applications pratiques
+Ce jeu de données constitue une ressource précieuse pour les amateurs de fantasy cricket souhaitant prendre des décisions basées sur les données, les analystes sportifs cherchant à identifier des tendances de performance, et les data scientists intéressés par l'application de techniques d'apprentissage automatique au domaine du sport. Il permet notamment de construire des modèles prédictifs pour optimiser la sélection d'équipes fantasy et maximiser les points lors des compétitions virtuelles.
 ## 1. Contexte du Projet
 
 ### 1.1 Origine du Dataset
