@@ -5,6 +5,7 @@
 ---
 <img src="SB.png" style="height:464px;margin-right:432px"/>	
 <img src="SETTAT.png" style="height:464px;margin-right:432px"/>	
+
 ## Introduction
 ## Contexte et origine du dataset
 ## Le dataset "IPL 2020 - Fantasy League Analysis" a été créé et publié sur Kaggle par akashram en septembre 2020. Cette base de données a été conçue spécifiquement pour analyser et augmenter les chances de gagner en Fantasy League Kaggle, dans le contexte de l'Indian Premier League (IPL) 2020, l'une des compétitions de cricket les plus populaires au monde.
