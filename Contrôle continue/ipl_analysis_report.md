@@ -1,13 +1,13 @@
 # Compte Rendu : Analyse du Dataset IPL 2020 Fantasy League
-##Introduction
-Contexte et origine du dataset
-Le dataset "IPL 2020 - Fantasy League Analysis" a été créé et publié sur Kaggle par akashram en septembre 2020. Cette base de données a été conçue spécifiquement pour analyser et augmenter les chances de gagner en Fantasy League Kaggle, dans le contexte de l'Indian Premier League (IPL) 2020, l'une des compétitions de cricket les plus populaires au monde.
-Objectif et méthodologie
-Ce dataset vise à fournir aux passionnés de cricket et aux joueurs de fantasy league des données détaillées et exploitables pour optimiser leurs stratégies de sélection d'équipe. Les données compilées couvrent la saison IPL 2020 et incluent des statistiques de performance des joueurs, des informations sur les matchs, et d'autres métriques clés permettant d'évaluer les performances individuelles et collectives.
-Nature de la population
-La base de données se concentre sur les joueurs de cricket participant à l'IPL 2020, incluant batteurs, lanceurs et gardiens de guichet de toutes les équipes franchisées. Elle compile leurs performances match par match, offrant ainsi une vue granulaire des statistiques individuelles exploitables pour les analyses prédictives.
-Applications pratiques
-Ce jeu de données constitue une ressource précieuse pour les amateurs de fantasy cricket souhaitant prendre des décisions basées sur les données, les analystes sportifs cherchant à identifier des tendances de performance, et les data scientists intéressés par l'application de techniques d'apprentissage automatique au domaine du sport. Il permet notamment de construire des modèles prédictifs pour optimiser la sélection d'équipes fantasy et maximiser les points lors des compétitions virtuelles.
+## Introduction
+## Contexte et origine du dataset
+## Le dataset "IPL 2020 - Fantasy League Analysis" a été créé et publié sur Kaggle par akashram en septembre 2020. Cette base de données a été conçue spécifiquement pour analyser et augmenter les chances de gagner en Fantasy League Kaggle, dans le contexte de l'Indian Premier League (IPL) 2020, l'une des compétitions de cricket les plus populaires au monde.
+## Objectif et méthodologie
+## Ce dataset vise à fournir aux passionnés de cricket et aux joueurs de fantasy league des données détaillées et exploitables pour optimiser leurs stratégies de sélection d'équipe. Les données compilées couvrent la saison IPL 2020 et incluent des statistiques de performance des joueurs, des informations sur les matchs, et d'autres métriques clés permettant d'évaluer les performances individuelles et collectives.
+### Nature de la population
+## La base de données se concentre sur les joueurs de cricket participant à l'IPL 2020, incluant batteurs, lanceurs et gardiens de guichet de toutes les équipes franchisées. Elle compile leurs performances match par match, offrant ainsi une vue granulaire des statistiques individuelles exploitables pour les analyses prédictives.
+### Applications pratiques
+## Ce jeu de données constitue une ressource précieuse pour les amateurs de fantasy cricket souhaitant prendre des décisions basées sur les données, les analystes sportifs cherchant à identifier des tendances de performance, et les data scientists intéressés par l'application de techniques d'apprentissage automatique au domaine du sport. Il permet notamment de construire des modèles prédictifs pour optimiser la sélection d'équipes fantasy et maximiser les points lors des compétitions virtuelles.
 ## 1. Contexte du Projet
 
 ### 1.1 Origine du Dataset
@@ -179,6 +179,7 @@ df1.dataframeName = 'deliveries.csv'
 nRow, nCol = df1.shape
 print(f'There are {nRow} rows and {nCol} columns')
 ```
+There are 1000 rows and 21 columns
 
 **Interprétation** :
 - **Échantillonnage** : Charge seulement 1000 lignes pour une exploration rapide (économie de mémoire)
@@ -191,6 +192,376 @@ print(f'There are {nRow} rows and {nCol} columns')
 ```python
 df1.head(5)
 ```
+ 
+  
+    
+
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+
+
+  
+    
+      
+      match_id
+      inning
+      batting_team
+      bowling_team
+      over
+      ball
+      batsman
+      non_striker
+      bowler
+      is_super_over
+      ...
+      bye_runs
+      legbye_runs
+      noball_runs
+      penalty_runs
+      batsman_runs
+      extra_runs
+      total_runs
+      player_dismissed
+      dismissal_kind
+      fielder
+    
+  
+  
+    
+      0
+      1
+      1
+      Sunrisers Hyderabad
+      Royal Challengers Bangalore
+      1
+      1
+      DA Warner
+      S Dhawan
+      TS Mills
+      0
+      ...
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      NaN
+      NaN
+      NaN
+    
+    
+      1
+      1
+      1
+      Sunrisers Hyderabad
+      Royal Challengers Bangalore
+      1
+      2
+      DA Warner
+      S Dhawan
+      TS Mills
+      0
+      ...
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      NaN
+      NaN
+      NaN
+    
+    
+      2
+      1
+      1
+      Sunrisers Hyderabad
+      Royal Challengers Bangalore
+      1
+      3
+      DA Warner
+      S Dhawan
+      TS Mills
+      0
+      ...
+      0
+      0
+      0
+      0
+      4
+      0
+      4
+      NaN
+      NaN
+      NaN
+    
+    
+      3
+      1
+      1
+      Sunrisers Hyderabad
+      Royal Challengers Bangalore
+      1
+      4
+      DA Warner
+      S Dhawan
+      TS Mills
+      0
+      ...
+      0
+      0
+      0
+      0
+      0
+      0
+      0
+      NaN
+      NaN
+      NaN
+    
+    
+      4
+      1
+      1
+      Sunrisers Hyderabad
+      Royal Challengers Bangalore
+      1
+      5
+      DA Warner
+      S Dhawan
+      TS Mills
+      0
+      ...
+      0
+      0
+      0
+      0
+      0
+      2
+      2
+      NaN
+      NaN
+      NaN
+    
+  
+
+5 rows × 21 columns
+
+    
+
+  
+    
+
+  
+    
+  
+    
+
+  
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  
+
+    
+      const buttonEl =
+        document.querySelector('#df-62f4e670-e294-4459-845b-24a397917ab0 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-62f4e670-e294-4459-845b-24a397917ab0');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    
+  
+
+
+    
+      
+
+
+    
+        
+    
+
+      
+
+
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+
+
+      
+        async function quickchart(key) {
+          const quickchartButtonEl =
+            document.querySelector('#' + key + ' button');
+          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+          quickchartButtonEl.classList.add('colab-df-spinner');
+          try {
+            const charts = await google.colab.kernel.invokeFunction(
+                'suggestCharts', [key], {});
+          } catch (error) {
+            console.error('Error during call to suggestCharts:', error);
+          }
+          quickchartButtonEl.classList.remove('colab-df-spinner');
+          quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+        }
+        (() => {
+          let quickchartButtonEl =
+            document.querySelector('#df-8ecdde33-b363-439f-be24-0aee415a4207 button');
+          quickchartButtonEl.style.display =
+            google.colab.kernel.accessAllowed ? 'block' : 'none';
+        })();
+      
+    
+
 
 **Interprétation** :
 - Affiche les 5 premières lignes du dataset
