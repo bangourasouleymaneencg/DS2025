@@ -212,7 +212,7 @@ df1.head(5)
 ```python
 plotPerColumnDistribution(df1, 10, 5)
 ```
-
+<img src="C.png" style="height:464px;margin-right:432px"/>	
 **Interprétation des résultats attendus** :
 - **Runs par balle** : Distribution probablement asymétrique avec majorité de 0, 1, 2 runs et quelques 4 et 6
 - **Wickets** : Distribution très déséquilibrée (peu de wickets par rapport au nombre total de balles)
@@ -229,7 +229,7 @@ plotPerColumnDistribution(df1, 10, 5)
 ```python
 plotScatterMatrix(df1, 20, 10)
 ```
-
+<img src="cc.png" style="height:464px;margin-right:432px"/>	
 **Interprétation des résultats attendus** :
 - **Corrélations entre runs et extras** : Relation faible attendue
 - **Over vs runs** : Peut montrer l'augmentation du run rate en fin de match
