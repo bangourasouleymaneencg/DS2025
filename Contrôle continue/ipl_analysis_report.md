@@ -1,4 +1,10 @@
 # Compte Rendu : Analyse du Dataset IPL 2020 Fantasy League
+## BANGOURA SOULEYMANE
+## N°A : 22007304
+## CAC G1
+---
+<img src="SB.png" style="height:464px;margin-right:432px"/>	
+<img src="SETTAT.png" style="height:464px;margin-right:432px"/>	
 ## Introduction
 ## Contexte et origine du dataset
 ## Le dataset "IPL 2020 - Fantasy League Analysis" a été créé et publié sur Kaggle par akashram en septembre 2020. Cette base de données a été conçue spécifiquement pour analyser et augmenter les chances de gagner en Fantasy League Kaggle, dans le contexte de l'Indian Premier League (IPL) 2020, l'une des compétitions de cricket les plus populaires au monde.
@@ -212,7 +218,7 @@ df1.head(5)
 ```python
 plotPerColumnDistribution(df1, 10, 5)
 ```
-<img src="C.png" style="height:464px;margin-right:432px"/>	
+<img src="c.png" style="height:464px;margin-right:432px"/>	
 **Interprétation des résultats attendus** :
 - **Runs par balle** : Distribution probablement asymétrique avec majorité de 0, 1, 2 runs et quelques 4 et 6
 - **Wickets** : Distribution très déséquilibrée (peu de wickets par rapport au nombre total de balles)
