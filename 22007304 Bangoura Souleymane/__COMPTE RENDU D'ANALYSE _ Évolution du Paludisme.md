@@ -1,4 +1,4 @@
-<img src="SB.png" style="height:64px;margin-right:32px"/>
+<img src="SB.png" style="height:264px;margin-right:232px"/>
 
 # **COMPTE RENDU D'ANALYSE : Évolution du Paludisme en Afrique (2000-2024)**
 
