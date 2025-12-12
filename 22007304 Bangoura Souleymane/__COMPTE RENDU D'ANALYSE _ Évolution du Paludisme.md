@@ -5,26 +5,26 @@
 
 <img src="SB.png" style="height:364px;margin-right:332px"/>, <img src="SETTAT.png" style="height:264px;margin-right:232px"/>
 ***
-## **INTRODUCTION : Analyse de l'Évolution du Paludisme en Afrique (2000-2024)**
-## 10 décembre 2025 – Dans le cadre d'une étude approfondie sur les indicateurs de santé publique, cette analyse examine l'évolution de l'incidence du paludisme en Afrique sur la période 2000-2024, à partir des données officielles de la Banque Mondiale (indicateur SH.MLR.INCD.P3, mise à jour 04 décembre 2025).
 
-## Réalisée par un data analyst en collaboration avec l'assistant IA Perplexity AI, cette étude traite un dataset exhaustif de 102 297 caractères couvrant 50+ pays africains (Afrique subsaharienne et Maghreb) et 3 000+ observations sur 25 ans. L'analyse cible la population à risque du paludisme telle que définie par l'OMS – soit les personnes exposées dans les zones endémiques – mesurée en cas confirmés pour 1 000 habitants à risque.
+# **INTRODUCTION : Analyse de l'Évolution du Paludisme en Afrique (2000-2024)**
 
-## ** Méthodologie rigoureuse en 5 étapes :
+**10 décembre 2025** – Dans le cadre d'une étude approfondie sur les indicateurs de santé publique, cette analyse examine l'évolution de l'incidence du paludisme en Afrique sur la période 2000-2024, à partir des données officielles de la Banque Mondiale (indicateur SH.MLR.INCD.P3, mise à jour 04 décembre 2025).
 
-## Extraction des données Banque Mondiale (format long CSV)
+Réalisée par **Bangoura** en collaboration avec l'assistant IA Perplexity AI, cette étude traite un dataset exhaustif de **102 297 caractères** couvrant **50+ pays africains** (Afrique subsaharienne et Maghreb) et **3 000+ observations** sur 25 ans. L'analyse cible la **population à risque du paludisme** telle que définie par l'OMS – soit les personnes exposées dans les zones endémiques – mesurée en **cas confirmés pour 1 000 habitants à risque**.
 
-## Nettoyage focalisé Afrique (codes ISO3 validés) + période 2000-2024
+**Méthodologie rigoureuse en 5 étapes** :
 
-## Analyse statistique avancée : régressions linéaires (pente, R², p-value) et matrice de corrélation Pearson multivariée
+1. **Extraction** des données Banque Mondiale (format long CSV)
+2. **Nettoyage** focalisé Afrique (codes ISO3 validés) + période 2000-2024
+3. **Analyse statistique avancée** : régressions linéaires (pente, R², p-value) et matrice de corrélation Pearson multivariée
+4. **Visualisations professionnelles** : 6 graphiques haute résolution (300 DPI)
+5. **Outputs structurés** : 4 fichiers CSV + 2 PNG prêts publication
 
-## Visualisations professionnelles : 6 graphiques haute résolution (300 DPI)
+**Résultats préliminaires** révèlent une **baisse continentale de 33%** (289 → 192 cas/1 000), avec **68% des pays** en amélioration significative (p<0.05) et une **corrélation inter-pays forte** (r = +0.68). Des clusters régionaux émergent : Afrique de l'Ouest (Nigeria-Ghana) et Centrale (RDC-Congo), tandis que Rwanda et Égypte se distinguent par des succès exceptionnels.
 
-## Outputs structurés : 4 fichiers CSV + 2 PNG prêts publication
+Cette étude fournit un **socle scientifique robuste** pour l'évaluation des progrès vers les Objectifs de l'Union Africaine et de l'OMS, avec des outputs immédiatement exploitables (Excel, R, PowerPoint, publications académiques).
 
-## Résultats préliminaires révèlent une baisse continentale de 33% (289 → 192 cas/1 000), avec 68% des pays en amélioration significative (p<0.05) et une corrélation inter-pays forte (r = +0.68). Des clusters régionaux émergent : Afrique de l'Ouest (Nigeria-Ghana) et Centrale (RDC-Congo), tandis que Rwanda et Égypte se distinguent par des succès exceptionnels.
 
-## Cette étude fournit un socle scientifique robuste pour l'évaluation des progrès vers les Objectifs de l'Union Africaine et de l'OMS, avec des outputs immédiatement exploitables (Excel, R, PowerPoint, publications académiques).
 
 ## **1. Le Contexte Métier et la Mission** 🩺
 
