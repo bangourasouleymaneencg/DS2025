@@ -3,8 +3,7 @@
 ## N°A : 22007304
 ## CAC G1
 
-<img src="SB.png" style="height:364px;margin-right:332px"/>
-<img src="SETTAT.png" style="height:264px;margin-right:232px"/>
+<img src="SB.png" style="height:364px;margin-right:332px"/>, <img src="SETTAT.png" style="height:264px;margin-right:232px"/>
 ***
 
 ## **1. Le Contexte Métier et la Mission** 🩺
