@@ -1,8 +1,10 @@
-<img src="SB.png" style="height:264px;margin-right:232px"/>
-
 # **COMPTE RENDU D'ANALYSE : Évolution du Paludisme en Afrique (2000-2024)**
+## BANGOURA SOULEYMANE
+## N°A : 22007304
+## CAC G1
 
-
+<img src="SB.png" style="height:364px;margin-right:332px"/>
+<img src="SETTAT.png" style="height:364px;margin-right:332px"/>
 ***
 
 ## **1. Le Contexte Métier et la Mission** 🩺
